@@ -31,6 +31,6 @@ rm -rf %{pypi_name}.egg-info
 %py_install
 
 %files
-#{python_sitelib}/__pycache__/*
-#{python_sitelib}/%{pypi_name}.py
-#{python_sitelib}/%{pypi_name}-%{version}-py%{python_version}.egg-info
+%{python_sitelib}/patch_ng-%{version}-py*.*.egg-info
+%{python_sitelib}/patch_ng.py
+%{python_sitelib}/__pycache__/
