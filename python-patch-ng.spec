@@ -31,8 +31,6 @@ rm -rf %{pypi_name}.egg-info
 %py_install
 
 %files
-%doc LICENSE
-%doc README.rst
 #{python_sitelib}/__pycache__/*
 #{python_sitelib}/%{pypi_name}.py
 #{python_sitelib}/%{pypi_name}-%{version}-py%{python_version}.egg-info
