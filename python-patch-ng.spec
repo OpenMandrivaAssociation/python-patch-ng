@@ -7,7 +7,7 @@ Summary:        Library to parse and apply unified diffs
 License:        MIT
 Group:          Development/Python
 URL:            https://github.com/conan-io/python-patch-ng
-Source0:        https://files.pythonhosted.org/packages/source/p/%{srcname}/%{srcname}-%{version}.tar.gz
+Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
