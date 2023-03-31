@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.17.4
-Release:        1
+Release:        2
 Summary:        Library to parse and apply unified diffs
 License:        MIT
 Group:          Development/Python
