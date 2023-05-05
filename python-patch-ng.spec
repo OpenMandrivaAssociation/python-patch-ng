@@ -1,25 +1,27 @@
-%global pypi_name patch-ng
-
-Name:           python-%{pypi_name}
+Name:           python-patch-ng
 Version:        1.17.4
-Release:        2
+Release:        3
 Summary:        Library to parse and apply unified diffs
 License:        MIT
 Group:          Development/Python
 URL:            https://github.com/conan-io/python-patch-ng
-Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:	https://pypi.io/packages/source/p/patch-ng/patch-ng-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
-BuildRequires:  python3dist(setuptools)
-
-%{?python_provide:%python_provide python3-%{pypi_name}}
+BuildRequires:  python%{pyver}dist(setuptools)
 
 %description
 Library to parse and apply unified diffs.
 This project is a fork from the original python-patch project.
 
+%files
+%{python_sitelib}/patch_ng-%{version}-py*.*-info
+%{python_sitelib}/patch_ng.py
+
+#--------------------------------------------------------------------
+
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -n patch-ng\-%{version}
 
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
@@ -30,7 +32,3 @@ rm -rf %{pypi_name}.egg-info
 %install
 %py_install
 
-%files
-%{python_sitelib}/patch_ng-%{version}-py*.*.egg-info
-%{python_sitelib}/patch_ng.py
-%{python_sitelib}/__pycache__/
