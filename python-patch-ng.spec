@@ -2,7 +2,7 @@
 %define oname patch_ng
 
 Name:		python-patch-ng
-Version:	1.19.0
+Version:	1.19.1
 Release:	1
 Summary:	Library to parse and apply unified diffs
 License:	MIT
