@@ -3,7 +3,7 @@
 
 Name:		python-patch-ng
 Version:	1.19.1
-Release:	1
+Release:	2
 Summary:	Library to parse and apply unified diffs
 License:	MIT
 Group:		Development/Python
